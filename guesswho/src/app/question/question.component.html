@@ -1,0 +1,25 @@
+<div class="question-container">
+  <div class="options-container">
+    <div class="question-title">
+      <h4>Who is on the photo?</h4>
+    </div>
+    <div *ngIf="data">
+      <mat-radio-group class="radio-group" [(ngModel)]="answer">
+        <mat-radio-button class="radio-button" *ngFor="let option of data.people" [value]="option">
+          {{option}}
+        </mat-radio-button>
+      </mat-radio-group>
+    </div>
+    <div class="button-panel">
+      <div>
+        <button class="home-btn" routerLink="/home">Home</button>
+      </div>
+      <div>
+        <button class="next-btn" (click)="onNextClicked()">Next</button>
+      </div>
+    </div>
+  </div>
+  <div class="image-container" *ngIf="data">
+    <img src="{{data.link}}">
+  </div>
+</div>

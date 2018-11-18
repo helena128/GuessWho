@@ -1,0 +1,36 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.mode-container {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mode-title {
+  text-align: center;
+}
+
+.mode-container > div {
+  margin-right: 10px;
+}
+
+
+@media only screen and (min-width: 800px) {
+  button {
+    font-size: 25px !important;
+  }
+
+  .mode-title {
+    margin-top: 30px;
+    font-size: 30px;
+  }
+
+  .mode-container {
+    margin-top: 40px;
+  }
+}
