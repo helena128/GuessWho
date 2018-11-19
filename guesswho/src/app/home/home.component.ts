@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  gameModes: string[] = ['Easy', 'Medium', 'Hard'];
+  gameModes: string[] = ['Easy', 'Medium', 'Expert'];
 
   constructor(private router: Router) { }
 

@@ -9,6 +9,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { QuestionService } from './question.service';
 import {FormsModule} from '@angular/forms';
 import {MatRadioModule} from '@angular/material';
+import {ToastrModule} from "ngx-toastr";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {CommonModule} from "@angular/common";
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent},
@@ -27,7 +30,10 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     HttpClientModule,
     FormsModule,
-    MatRadioModule
+    MatRadioModule,
+    CommonModule,
+    BrowserAnimationsModule, // required animations module
+    ToastrModule.forRoot() // ToastrModule added
   ],
   providers: [QuestionService],
   bootstrap: [AppComponent]

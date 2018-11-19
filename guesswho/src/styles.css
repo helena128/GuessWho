@@ -4,3 +4,13 @@
 html, body {
   font-family: 'Montserrat', sans-serif;
 }
+
+button {
+  transition-duration: 0.4s;
+  border-radius: 8px;
+  font-size: 18px;
+  color: floralwhite;
+  border: transparent;
+  min-height: 5vh;
+  min-width: 10vh;
+}

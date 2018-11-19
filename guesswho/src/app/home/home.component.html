@@ -1,13 +1,14 @@
-<!--<div class="main-container">
+<div class="main-container">
   <div class="mode-title">
     <h3>Choose mode to start game</h3>
-  </div>-->
-  <div>
-  <div class="mode-container" *ngFor="let mode of gameModes">
-    <div>
-      <button (click)="onModeSelect(mode)"
-        [class]="mode.toLowerCase()">{{mode}}</button>
-    </div>
-  </div><!--
   </div>
-</div>-->
+  <div class="mode-container">
+    <div *ngFor="let mode of gameModes">
+      <div>
+        <button (click)="onModeSelect(mode)"
+                [class]="mode.toLowerCase()">{{mode}}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

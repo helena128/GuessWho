@@ -8,18 +8,15 @@
 }
 
 .header {
-  border: forestgreen 1px solid;
   padding-left: 20px;
 }
 
 .body {
-  border: brown 1px solid;
   flex: 1;
   padding-left: 20px;
 }
 
 .footer {
-  border: blueviolet 1px solid;
   text-align: right;
   padding-top: 5vh;
 }
